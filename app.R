@@ -119,13 +119,13 @@ server <- function(input, output, session) {
     
   })
   # Render the radar plot image
-  # output$radar_image <- renderImage({
-  #   list(src = "radar_plots_6clust.png",  
-  #        contentType = "image/png",
-  #        width = 900,  
-  #        height = 500,  
-  #        alt = "Cluster Radar Plot")
-  # }, deleteFile = FALSE)
+  output$radar_image <- renderImage({
+    list(src = "radar_plots_6clust.png",  
+         contentType = "image/png",
+         width = 900,  
+         height = 500,  
+         alt = "Cluster Radar Plot")
+  }, deleteFile = FALSE)
 }
 
 # Run the application 
